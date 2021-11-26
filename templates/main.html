@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>MGL bill calculator</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="{{url_for('static', filename='index.js')}}"></script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>-->
+        <script>
+
+            </script>
+    <style>
+            .center {
+              margin: auto;
+              width: 60%;
+              /* border: 3px solid #73AD21; */
+              padding: 10px;
+            }
+
+            .acenter {
+                text-align: center;
+            }
+    </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="class="row mainDiv onMount-appear-done onMount-enter-done" style="border-bottom: 1px solid var(--border); background-color: rgb(5, 65, 5); text-
+align: center;color: ghostwhite;">Mahanagar Gas Limited Bill Calculator</h1>
+        </div>
+        <div class="center">
+        <div class="w-full max-w-xs m-auto">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2 acenter" for="cmr">
+                  Current Meter Reading
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cmr" type
+="text" placeholder="Current Meter Reading">
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2 acenter" for="pmr">
+                  Previous Meter Reading
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pmr" type
+="text" placeholder="Previous Meter Reading"">
+                <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
+              </div>
+              <div class="flex justify-center">
+                <button onclick="loadXMLDoc()" id="calculate" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shad
+ow-outline" type="button">
+                  Calculate
+                </button>
+              </div>
+              <div id="result"></div>
+            </form>
+            <p class="text-center text-gray-500 text-xs">
+              &copy;2021 jinja2
+            </p>
+          </div>
+        </div>
+    </body>
+</html>
